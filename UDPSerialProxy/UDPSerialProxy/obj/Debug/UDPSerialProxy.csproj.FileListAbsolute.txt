@@ -1,0 +1,8 @@
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\bin\Debug\UDPSerialProxy.exe.config
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\obj\Debug\UDPSerialProxy.Properties.Resources.resources
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\obj\Debug\UDPSerialProxy.csproj.GenerateResource.Cache
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\bin\Debug\UDPSerialProxy.exe
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\bin\Debug\UDPSerialProxy.pdb
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\obj\Debug\UDPSerialProxy.Form1.resources
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\obj\Debug\UDPSerialProxy.exe
+C:\Users\mbp7\SkyDrive\studies\1304\UDPSerialProxy\UDPSerialProxy\obj\Debug\UDPSerialProxy.pdb
