@@ -52,6 +52,7 @@
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.logoutput_checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -287,11 +288,24 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "Serial Port:";
             // 
+            // logoutput_checkBox1
+            // 
+            this.logoutput_checkBox1.AutoSize = true;
+            this.logoutput_checkBox1.Checked = true;
+            this.logoutput_checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.logoutput_checkBox1.Location = new System.Drawing.Point(276, 232);
+            this.logoutput_checkBox1.Name = "logoutput_checkBox1";
+            this.logoutput_checkBox1.Size = new System.Drawing.Size(66, 16);
+            this.logoutput_checkBox1.TabIndex = 38;
+            this.logoutput_checkBox1.Text = "Log表示";
+            this.logoutput_checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 287);
+            this.Controls.Add(this.logoutput_checkBox1);
             this.Controls.Add(this.S2UButton);
             this.Controls.Add(this.covertLabel);
             this.Controls.Add(this.U2SButton);
@@ -338,6 +352,7 @@
         private System.Windows.Forms.TextBox messageTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox logoutput_checkBox1;
 
     }
 }

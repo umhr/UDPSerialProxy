@@ -50,13 +50,16 @@ namespace UDPSerialProxy
 
             writeUDP(message);
 
-            // ソケット接続
-            string targetIpAddress = targetIPTextBox.Text;
-            int targetPort = int.Parse(targetPortTextBox.Text);
+            if (logoutput_checkBox1.Checked)
+            {
+                // ソケット接続
+                string targetIpAddress = targetIPTextBox.Text;
+                int targetPort = int.Parse(targetPortTextBox.Text);
 
-            String text = "Send " + targetIpAddress + ":" + targetPort.ToString() + " " + message;
+                String text = "Send " + targetIpAddress + ":" + targetPort.ToString() + " " + message;
 
-            logTextBox.AppendText(text + "\n");
+                logTextBox.AppendText(text + "\n");
+            }
         }
 
         private void writeUDP(string text)
@@ -93,7 +96,10 @@ namespace UDPSerialProxy
         {
             if (data != null)
             {
-                logTextBox.AppendText(data + "\n");
+                if (logoutput_checkBox1.Checked)
+                {
+                    logTextBox.AppendText(data + "\n");
+                }
                 UDP2Serial(data);
             }
         }
@@ -217,10 +223,13 @@ namespace UDPSerialProxy
         private void writeSerial(string text)
         {
             serialPort1.Write(text);
-            logTextBoxSerial.AppendText("Write : " + text + "\n");
-            //Console.WriteLine(text);
-            // messageTextBoxをクリア
-            messageTextBoxSerial.Text = "";
+            if (logoutput_checkBox1.Checked)
+            {
+                logTextBoxSerial.AppendText("Write : " + text + "\n");
+                //Console.WriteLine(text);
+                // messageTextBoxをクリア
+                messageTextBoxSerial.Text = "";
+            }
         }
 
         /****************************************************************************/
@@ -246,7 +255,10 @@ namespace UDPSerialProxy
         {
             if (data != null)
             {
-                logTextBoxSerial.AppendText("Read : " + data + "\n");
+                if (logoutput_checkBox1.Checked)
+                {
+                    logTextBoxSerial.AppendText("Read : " + data + "\n");
+                }
                 Serial2UDP(data);
             }
         }
